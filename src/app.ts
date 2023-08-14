@@ -1,5 +1,5 @@
 import ExpressConfig from './config/express.config'
-import { PORT } from "./config/config"
+import { PORT } from './config/config'
 
 const app = ExpressConfig()
 
