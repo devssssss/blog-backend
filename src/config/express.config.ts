@@ -1,6 +1,6 @@
-import express, { Application } from "express"
-import morgan from "morgan"
-import helmet from "helmet"
+import express, { Application } from 'express'
+import morgan from 'morgan'
+import helmet from 'helmet'
 
 const ExpressConfig = (): Application => {
   const app = express()
@@ -8,7 +8,7 @@ const ExpressConfig = (): Application => {
   app.use(express.json())
 
   app.use(helmet())
-  app.use(morgan("dev"))
+  app.use(morgan('dev'))
 
   return app
 }
